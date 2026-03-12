@@ -1,0 +1,63 @@
+<h4>Directives</h4>
+<p>Directives are used to Extend the functionality of the HTML elements.</p>
+<p>There are two types of directives in AngularJS.</p>
+<ul>
+    <li>Attribute directives : used for change the behaviour / appearance of the element</li>
+    <li>Structural directives : used for add / remove / modify the HTMl DOM structure</li>
+</ul>
+
+<hr/>
+<h5>Attribute Directives</h5>
+<ul>
+    <li>ngClass : used for adding / removing css classes dynamically in html elements</li>
+    <li>ngStyle  : used for adding / removing inline styles dynamically in html elements</li>
+</ul>
+
+<hr/>
+<h5>Structural Directives</h5>
+<ul>
+    <li>*ngIf : used for conditionally displaying the elements</li>
+    <li>*ngFor : used for iterating over the elements</li>
+    <li>*ngSwitch : used for conditionally displaying the elements</li>
+</ul>
+
+<hr/>
+
+<h4>*ngIf : used for conditionally displaying the elements</h4>
+<p><a href="#" (click)="toggle()">Click here</a> to see the example</p>
+<div class="example" *ngIf="isVisable">
+    <p>example</p>
+    <code>
+        &lt;div *ngIf="isVisable"&gt;
+            &lt;p&gt;example&lt;/p&gt;
+        &lt;/div&gt;
+    </code>
+</div>
+
+<hr/>
+<h4>*ngFor : used for iterating over the elements</h4>
+<div class="example">
+    <code>
+        &lt;ul *ngFor="let item of data"&gt;
+        &lt;/ul&gt;
+    </code>
+    <ul *ngFor="let item of data">
+        <li>{{item}}</li>
+    </ul>
+</div>
+
+
+<hr/>
+<h4>*ngSwitch : used for conditionally displaying the elements</h4>
+<div class="example">
+    <code>
+        &lt;div [ngSwitch]="isData"&gt;<br/>
+        &lt;p *ngSwitchCase="'hello'"&gt;Hello Ajay&lt;/p&gt;<br/>
+            &lt;p *ngSwitchDefault&gt;Hello World&lt;/p&gt;
+        &lt;/div&gt;
+    </code>
+    <div [ngSwitch]="isData">
+        <p *ngSwitchCase="'hello'">Hello Ajay</p>
+        <p *ngSwitchDefault>Hello World</p>
+    </div>
+</div>

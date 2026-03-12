@@ -1,0 +1,17 @@
+<h2>App component</h2>
+<app-home name="Angular" (nameChnage)="changeName($event)"></app-home>
+
+one way data binding:
+<!-- interpolation  : {{ expression }} -->
+ <!-- Property binding : [property]="expression" -->
+  <!-- Event binding : (event)="expression" -->
+
+Two way data binding:
+<!-- ngModel : [(ngModel)]="expression" -->
+
+
+<h4>Name : {{name}}</h4>
+<h4>Class : {{class}}</h4>
+<button (click)="clickMe()">Click me</button>
+
+<img [src]="url" alt="">
