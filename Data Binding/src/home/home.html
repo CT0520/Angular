@@ -1,0 +1,32 @@
+<h4>Data Binding</h4>
+<ul>
+    <li>One way binding</li>
+    <ol>
+        <li>Interpolation</li>
+        <li>Property binding</li>
+        <li>Event binding</li>
+    </ol>
+    <li>Two way binding</li>
+    <ol>
+        <li>NgModel</li>
+    </ol>
+</ul>
+
+<hr>
+<h4>Interpolation</h4>
+<p>Interpolation is a one way data binding technique that allows you to display dynamic data in your template. </p>
+
+username : <input type="text" name="name" id="name" [(ngModel)]="name">
+<p>Name : {{name}}</p>
+<p>Division : {{division}}</p>
+
+<hr>
+<h4>Property Binding</h4>
+<p>Property binding is a one way data binding technique that allows you to bind the Attribute values of the component</p>
+<img [src]="url" alt="">
+
+
+<hr>
+<h4>Event Binding</h4>
+<p>Event binding is a one way data binding technique that allows you to bind the events of the component</p>
+<button (click)="clickMe()">click me</button>
