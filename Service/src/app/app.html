@@ -1,0 +1,8 @@
+<h2>App Component</h2>
+<button (click)="getData()">Load data</button>
+
+<div *ngFor="let item of data">
+  <h3>{{ item.title }}</h3>
+  <p>{{ item.body }}</p>
+  <hr>
+</div>
